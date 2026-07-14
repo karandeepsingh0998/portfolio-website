@@ -46,8 +46,8 @@ export const siteContent = {
       "Growth Strategist",
     ],
     subtext:
-      "I build products that users love and businesses scale on. Currently open to Product Manager & AI PM roles — India & Global.",
-    location: "📍 India · Open to Relocation & Remote",
+      "I build products that users love and businesses scale on. Currently open to Product Manager & AI PM roles - India & Global.",
+    location: "📍 India · Open to Relocation & Remote (India and Globally)",
     cta: [
       { label: "View My Work", href: "#projects" },
       { label: "Download Resume", href: "/resume.pdf" },
@@ -65,7 +65,7 @@ export const siteContent = {
     bio: "I'm an AI Product Manager and entrepreneur with 4.5+ years of experience building products, scaling businesses, and turning complex problems into measurable outcomes. My background spans product management, software engineering, AI systems, and ecommerce, giving me a unique perspective on both strategy and execution. I'm passionate about building AI-native products that create real business value through user-centric design, data-driven decision making, and rapid experimentation.",
     highlights: [
       { value: "4.5+", label: "Years Experience" },
-      { value: "500+", label: "Sellers Served through SellerOps" },
+      { value: "30+", label: "Sellers Served through SellerOps" },
       { value: "5,000+", label: "Monthly Orders Scaled at Zibell" },
       { value: "2", label: "Ventures Co-Founded" },
     ],
@@ -201,7 +201,7 @@ export const siteContent = {
       highlights: [
         "Conducted 20+ customer interviews with Amazon, Flipkart, and marketplace sellers to validate product-market fit",
         "Defined product vision, roadmap, GTM strategy, and North Star Metric for an AI-native ecommerce analytics platform",
-        "Designed RAG-based architecture enabling sellers to query business data in natural language — reducing weekly reporting from ~3 hours to under 30 minutes",
+        "Designed RAG-based architecture enabling sellers to query business data in natural language - reducing weekly reporting from ~3 hours to under 30 minutes",
         "Built AI evaluation framework using golden datasets, LLM-as-Judge scoring, and quality thresholds to reduce hallucination risks",
         "Designed proactive AI insight workflows that surface profit leaks, return issues, and performance anomalies automatically",
         "Owned end-to-end product lifecycle including discovery, PRDs, prioritization, sprint planning, launch, and performance measurement",
@@ -270,9 +270,22 @@ export const siteContent = {
 
   projects: [
     {
+      title: "SellerOps AI: Profit Intelligence for Marketplace Sellers",
+      description:
+        "Built 0→1 in a 4-month build to help Indian marketplace sellers replace spreadsheets with AI-powered profit insights — grounding every answer in verified settlement data so sellers finally trust the numbers behind Amazon and Meesho fees, returns, and COGS.",
+      tags: ["AI/ML", "0→1", "B2B SaaS", "Marketplace", "India"],
+      metrics: ["30+ Active Sellers", "₹60L+ GMV Tracked", "2L+ Orders Analysed"],
+      image: "/projects/sellerops.png",
+      links: {
+        caseStudy: "/case-studies/sellerops-ai-case-study.pdf",
+        live: "https://sellerops.in",
+        notion: "",
+      },
+    },
+    {
       title: "Zibell D2C: From Product Catalogue to Conversion Engine",
       description:
-        "Transformed Zibell's D2C website from a passive catalogue into a measurable revenue channel — through funnel analytics setup, product discovery redesign, trust signal improvements, and growth automation.",
+        "Transformed Zibell's D2C website from a passive catalogue into a measurable revenue channel - through funnel analytics setup, product discovery redesign, trust signal improvements, and growth automation.",
       tags: ["D2C", "Growth", "E-commerce", "Conversion"],
       metrics: ["0.64% → 3.38% CVR", "₹11K → ₹99K/mo Revenue", "11 → 236 Orders/mo"],
       image: "/projects/zibell.png",
@@ -282,70 +295,145 @@ export const siteContent = {
         notion: "",
       },
     },
-    {
-      title: "AI Recommendation Engine",
-      description:
-        "Built a personalized recommendation system from scratch, leveraging ML models to surface relevant content and drive engagement.",
-      tags: ["B2C", "0→1", "AI/ML", "Growth"],
-      metrics: ["40% DAU increase", "2.3x session duration"],
-      image: "/projects/project1.png",
-      links: {
-        caseStudy: "#case-studies",
-        live: "",
-        notion: "https://notion.so/karandeep",
-      },
-    },
+    // {
+    //   title: "AI Recommendation Engine",
+    //   description:
+    //     "Built a personalized recommendation system from scratch, leveraging ML models to surface relevant content and drive engagement.",
+    //   tags: ["B2C", "0→1", "AI/ML", "Growth"],
+    //   metrics: ["40% DAU increase", "2.3x session duration"],
+    //   image: "/projects/project1.png",
+    //   links: {
+    //     caseStudy: "#case-studies",
+    //     live: "",
+    //     notion: "https://notion.so/karandeep",
+    //   },
+    // },
   ],
 
   caseStudies: [
+    {
+      title: "SellerOps AI: 0→1 AI-Powered Profit Intelligence",
+      type: "case-study" as const,
+      company: "SellerOps",
+      summary:
+        "How I took SellerOps AI from 0→1 in a 4-month build - researching why marketplace sellers don't trust their profit numbers, architecting a grounded (non-hallucinating) AI copilot on top of a deterministic settlement-reconciliation engine, and shipping to 30+ active sellers across Amazon and Meesho tracking ₹60L+ GMV and 2L+ orders.",
+      tags: ["AI/ML", "0→1", "B2B SaaS", "Marketplace", "India"],
+      link: "/case-studies/sellerops-ai-case-study.pdf",
+      thumbnail: "/case-studies/sellerops.png",
+    },
     {
       title: "Zibell D2C Growth & Conversion Optimization",
       type: "case-study" as const,
       company: "Zibell",
       summary:
-        "How I turned Zibell's D2C website into a measurable growth channel — diagnosing a 0.64% CVR, building GA4 + Meta Pixel attribution from scratch, fixing product discovery and trust gaps, and scaling from 11 to 236 monthly orders and ₹11K to ₹99K revenue.",
+        "How I turned Zibell's D2C website into a measurable growth channel - diagnosing a 0.64% CVR, building GA4 + Meta Pixel attribution from scratch, fixing product discovery and trust gaps, and scaling from 11 to 236 monthly orders and ₹11K to ₹99K revenue.",
       tags: ["D2C", "Growth", "Conversion", "E-commerce", "India"],
       link: "/case-studies/zibell-d2c-growth.pdf",
       thumbnail: "/case-studies/zibell.png",
     },
+    // {
+    //   title: "How I'd Improve Swiggy's Reorder Experience",
+    //   type: "teardown" as const,
+    //   company: "Swiggy",
+    //   summary:
+    //     "A deep dive into Swiggy's reorder flow — identifying friction points, proposing UX improvements, and estimating impact on retention and order frequency.",
+    //   tags: ["Consumer", "Retention", "India"],
+    //   link: "/case-studies/swiggy-reorder",
+    //   thumbnail: "/case-studies/swiggy.png",
+    // },
+    // {
+    //   title: "Product Sense: Design a Feature for LinkedIn India",
+    //   type: "product-sense" as const,
+    //   summary:
+    //     "Structured approach to designing a localized feature for LinkedIn's India market — problem framing, user segmentation, and success metrics.",
+    //   tags: ["B2B", "Social", "Interview Prep"],
+    //   link: "/case-studies/linkedin-india",
+    //   thumbnail: "/case-studies/linkedin.png",
+    // },
     {
-      title: "How I'd Improve Swiggy's Reorder Experience",
-      type: "teardown" as const,
+      title: "Lisan: AI Bilingual Listing Generator for Noon",
+      type: "product-sense" as const,
+      company: "Noon",
+      summary:
+        "A product-sense exercise: designing an AI workflow that helps cross-border sellers publish compliant Arabic + English listings on Noon 10x faster — covering market sizing, user segmentation, a compliance-gated AI architecture, MVP scoping, and a launch roadmap.",
+      tags: ["AI/ML", "Localization", "Marketplace", "Compliance"],
+      link: "/case-studies/lisan-case-study.pdf",
+      thumbnail: "/case-studies/lisan.png",
+    },
+    // {
+    //   title: "0→1 Launch: AI-Powered Search Feature",
+    //   type: "case-study" as const,
+    //   summary:
+    //     "End-to-end case study on launching an AI search feature — from discovery and PRD to MVP, A/B testing, and full rollout.",
+    //   tags: ["B2B", "AI/ML", "0→1"],
+    //   link: "/case-studies/ai-search",
+    //   thumbnail: "/case-studies/ai-search.png",
+    // },
+    {
+      title: "Swiggy Driver App Redesign: UX Proposal",
+      type: "product-improvement" as const,
       company: "Swiggy",
       summary:
-        "A deep dive into Swiggy's reorder flow — identifying friction points, proposing UX improvements, and estimating impact on retention and order frequency.",
-      tags: ["Consumer", "Retention", "India"],
-      link: "/case-studies/swiggy-reorder",
-      thumbnail: "/case-studies/swiggy.png",
+        "A UX audit and redesign proposal for Swiggy's delivery partner app — grounded in gig-worker research (mis-taps, low readability, no PiP, low-end device crashes), an impact-vs-effort feature prioritization, and a redesigned home, job, language, shift, and navigation flow projected to cut mis-taps 30-40% and lift driver CSAT 20-25%.",
+      tags: ["UX Redesign", "Consumer", "Gig Economy", "India"],
+      link: "/case-studies/swiggy-driver-app-redesign.pdf",
+      thumbnail: "/case-studies/swiggy-driver-app.png",
     },
     {
-      title: "Product Sense: Design a Feature for LinkedIn India",
-      type: "product-sense" as const,
-      summary:
-        "Structured approach to designing a localized feature for LinkedIn's India market — problem framing, user segmentation, and success metrics.",
-      tags: ["B2B", "Social", "Interview Prep"],
-      link: "/case-studies/linkedin-india",
-      thumbnail: "/case-studies/linkedin.png",
-    },
-    {
-      title: "0→1 Launch: AI-Powered Search Feature",
-      type: "case-study" as const,
-      summary:
-        "End-to-end case study on launching an AI search feature — from discovery and PRD to MVP, A/B testing, and full rollout.",
-      tags: ["B2B", "AI/ML", "0→1"],
-      link: "/case-studies/ai-search",
-      thumbnail: "/case-studies/ai-search.png",
-    },
-    {
-      title: "Teardown: Spotify's Discover Weekly",
+      title: "Snapchat My AI: Teardown of Conversational AI",
       type: "teardown" as const,
-      company: "Spotify",
+      company: "Snapchat",
       summary:
-        "Analyzing what makes Discover Weekly one of the best retention features in consumer tech — and what I'd replicate.",
-      tags: ["Consumer", "Retention", "Personalization"],
-      link: "/case-studies/spotify-discover",
-      thumbnail: "/case-studies/spotify.png",
+        "A product teardown of Snapchat's My AI chatbot - covering the competitive landscape, a target user persona, how the underlying ChatGPT-based model works, the end-to-end user journey for discovery, nicknaming, and avatar customization, a pros/cons analysis, and a North Star to L1/L2 metric tree (MAU → My AI usage rate → avg. responses per user).",
+      tags: ["Teardown", "Conversational AI", "Consumer", "Social"],
+      link: "/case-studies/snapchat-my-ai-teardown.pdf",
+      thumbnail: "/case-studies/snapchat-my-ai.png",
     },
+    {
+      title: "Truecaller: Product Teardown",
+      type: "teardown" as const,
+      company: "Truecaller",
+      summary:
+        "A product teardown of Truecaller - covering the competitive landscape (Hiya, DND, DM), a target user persona (a safety-conscious banking professional), the mechanics behind predictive call and smart SMS notifications, the caller-ID color-coding system, and a North Star to L1/L2 metric tree (DAU → app installs/premium conversion → Truecaller ID adoption and default-app settings).",
+      tags: ["Teardown", "Consumer", "Trust & Safety", "Telecom"],
+      link: "/case-studies/truecaller-teardown.pdf",
+      thumbnail: "/case-studies/truecaller.png",
+    },
+    {
+      title: "Nike App: Teardown of the Physical Product Purchase Journey",
+      type: "teardown" as const,
+      company: "Nike",
+      summary:
+        "A product teardown of the Nike app's purchase flow - covering the business model and revenue mix, a target user persona, a 15-step journey map from landing page to payment with a moment-by-moment emotion curve, and a North Star to L1/L2 metric tree (products purchased per month → payment drop-off → cart adds and pre-payment drop-off), surfacing friction in passcode-gated checkout and the lack of alternate payment options.",
+      tags: ["Teardown", "E-commerce", "Consumer", "Retail"],
+      link: "/case-studies/nike-teardown.pdf",
+      thumbnail: "/case-studies/nike.png",
+    },
+    {
+      title: "Increasing Voice Input Adoption on ChatGPT Mobile",
+      type: "product-improvement" as const,
+      company: "OpenAI",
+      summary:
+        "A product improvement proposal for ChatGPT Mobile that redesigns voice input with a Voice Control Layer featuring chunked transcription, inline editing, confidence indicators, and selective retry. Grounded in user research across Indian professionals, the solution addresses low trust in voice input caused by transcription errors, noisy environments, and accent recognition, with projected outcomes of a 60% increase in voice adoption, 25% higher engagement and retention, and improved Plus conversion.",
+      tags: ["Product Improvement",
+              "AI",
+              "Voice UX",
+              "Mobile",
+              "Consumer",
+              "OpenAI"],
+      link: "/case-studies/chatgpt.pdf",
+      thumbnail: "/case-studies/chatgpt.png",
+    },
+    // {
+    //   title: "Teardown: Spotify's Discover Weekly",
+    //   type: "teardown" as const,
+    //   company: "Spotify",
+    //   summary:
+    //     "Analyzing what makes Discover Weekly one of the best retention features in consumer tech — and what I'd replicate.",
+    //   tags: ["Consumer", "Retention", "Personalization"],
+    //   link: "/case-studies/spotify-discover",
+    //   thumbnail: "/case-studies/spotify.png",
+    // },
   ],
 
   aiSkills: {

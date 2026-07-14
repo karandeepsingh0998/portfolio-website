@@ -14,12 +14,14 @@ const typeBadgeVariant = {
   "case-study": { label: "Case Study", variant: "default" as const },
   teardown: { label: "Teardown", variant: "secondary" as const },
   "product-sense": { label: "Product Sense", variant: "success" as const },
+  "product-improvement": { label: "Product Improvement", variant: "outline" as const },
 };
 
 const typeTabLabels: Record<string, string> = {
   "case-study": "Case Studies",
   teardown: "Teardowns",
   "product-sense": "Product Sense",
+  "product-improvement": "Product Improvement",
 };
 
 function getTabs(): { label: string; filter: CaseStudyType | "all" }[] {
