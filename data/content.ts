@@ -162,7 +162,7 @@ export const siteContent = {
         icon: "🔍",
         title: "Discover",
         description:
-          "Deep user research, data analysis, and competitive benchmarking to identify real problems.",
+          "Deep user research, data analysis,  and competitive benchmarking to identify real problems.",
       },
       {
         icon: "🎯",
