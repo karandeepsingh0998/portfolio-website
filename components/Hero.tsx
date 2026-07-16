@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Mail, FileText, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { siteContent } from "@/data/content";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -135,15 +135,6 @@ export function Hero() {
                 aria-label="GitHub profile"
               >
                 <Github className="h-5 w-5" />
-              </a>
-              <a
-                href={hero.socialLinks.notion}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md p-2 text-muted hover:text-accent-hover hover:bg-surface transition-colors"
-                aria-label="Notion workspace"
-              >
-                <FileText className="h-5 w-5" />
               </a>
             </div>
           </motion.div>

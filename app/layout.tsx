@@ -78,7 +78,6 @@ function JsonLd() {
     sameAs: [
       siteContent.hero.socialLinks.linkedin,
       siteContent.hero.socialLinks.github,
-      siteContent.hero.socialLinks.notion,
     ],
     address: {
       "@type": "PostalAddress",

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin, Mail, Github, FileText } from "lucide-react";
+import { Linkedin, Mail, Github } from "lucide-react";
 import { siteContent } from "@/data/content";
 import { Badge } from "@/components/ui/badge";
 
@@ -63,15 +63,6 @@ export function Footer() {
                 aria-label="GitHub"
               >
                 <Github className="h-4 w-4" />
-              </a>
-              <a
-                href={hero.socialLinks.notion}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md p-2 text-muted hover:text-accent-hover hover:bg-background transition-colors"
-                aria-label="Notion"
-              >
-                <FileText className="h-4 w-4" />
               </a>
             </div>
             <Link
