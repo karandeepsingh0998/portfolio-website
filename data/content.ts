@@ -54,9 +54,8 @@ export const siteContent = {
     ],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/karandeep-singh-0998/",
-      email: "karandeep0998@email.com",
+      email: "karandeep0998@gmail.com",
       github: "https://github.com/karandeepsingh0998",
-      notion: "https://app.notion.com/p/Hey-I-m-Karandeep-Singh-318dcbd478fe805e97ddf577144ca24a",
     },
     avatar: "/avatar.png",
   },
@@ -205,7 +204,7 @@ export const siteContent = {
         "Built AI evaluation framework using golden datasets, LLM-as-Judge scoring, and quality thresholds to reduce hallucination risks",
         "Designed proactive AI insight workflows that surface profit leaks, return issues, and performance anomalies automatically",
         "Owned end-to-end product lifecycle including discovery, PRDs, prioritization, sprint planning, launch, and performance measurement",
-        "Acquired 500+ active sellers across modules covering SKU profitability, returns intelligence, PPC, fees, and business health",
+        "Acquired 30+ active sellers across modules covering SKU profitability, returns intelligence, PPC, fees, and business health",
       ],
     },
     {
@@ -274,7 +273,7 @@ export const siteContent = {
       description:
         "Built 0→1 in a 4-month build to help Indian marketplace sellers replace spreadsheets with AI-powered profit insights — grounding every answer in verified settlement data so sellers finally trust the numbers behind Amazon and Meesho fees, returns, and COGS.",
       tags: ["AI/ML", "0→1", "B2B SaaS", "Marketplace", "India"],
-      metrics: ["30+ Active Sellers", "₹60L+ GMV Tracked", "2L+ Orders Analysed"],
+      metrics: ["30+ Active Sellers", "₹60L+ GMV Tracked", "20K+ Orders Analysed"],
       image: "/projects/sellerops.png",
       links: {
         caseStudy: "/case-studies/sellerops-ai-case-study.pdf",
@@ -316,7 +315,7 @@ export const siteContent = {
       type: "case-study" as const,
       company: "SellerOps",
       summary:
-        "How I took SellerOps AI from 0→1 in a 4-month build - researching why marketplace sellers don't trust their profit numbers, architecting a grounded (non-hallucinating) AI copilot on top of a deterministic settlement-reconciliation engine, and shipping to 30+ active sellers across Amazon and Meesho tracking ₹60L+ GMV and 2L+ orders.",
+        "How I took SellerOps AI from 0→1 in a 4-month build - researching why marketplace sellers don't trust their profit numbers, architecting a grounded (non-hallucinating) AI copilot on top of a deterministic settlement-reconciliation engine, and shipping to 30+ active sellers across Amazon and Meesho tracking ₹60L+ GMV and 20K+ orders.",
       tags: ["AI/ML", "0→1", "B2B SaaS", "Marketplace", "India"],
       link: "/case-studies/sellerops-ai-case-study.pdf",
       thumbnail: "/case-studies/sellerops.png",
@@ -526,7 +525,7 @@ export const siteContent = {
     heading: "Let's Build Something Together",
     subtext:
       "Open to Senior PM, Lead PM, and Group PM roles. Available for consulting, advisory, and full-time opportunities.",
-    email: "karandeep@email.com",
+    email: "karandeep0998@gmail.com",
     linkedin: "https://linkedin.com/in/karandeepsingh",
     roleTypes: [
       "Full-time PM Role",

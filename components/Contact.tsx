@@ -29,9 +29,12 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
+const WEB3FORMS_ACCESS_KEY = "8cae94c7-9434-4193-a7e6-cdb9e3141237";
+
 export function Contact() {
   const { contact } = siteContent;
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const {
     register,
@@ -44,12 +47,32 @@ export function Contact() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Replace with EmailJS or Resend integration
-    console.log("Contact form submission:", data);
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
-    reset();
-    setTimeout(() => setSubmitted(false), 5000);
+    setSubmitError(false);
+    try {
+      const formData = new FormData();
+      formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+      formData.append("subject", `New portfolio inquiry from ${data.name}`);
+      formData.append("from_name", data.name);
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("company", data.company ?? "");
+      formData.append("role_type", data.roleType);
+      formData.append("message", data.message);
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await res.json();
+      if (!result.success) throw new Error(result.message || "Submission failed");
+
+      setSubmitted(true);
+      reset();
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      console.error("Contact form submission failed:", err);
+      setSubmitError(true);
+    }
   };
 
   return (
@@ -180,6 +203,12 @@ export function Contact() {
                 </>
               )}
             </Button>
+            {submitError && (
+              <p className="text-xs text-red-400">
+                Something went wrong sending your message. Please try again or
+                email me directly at {contact.email}.
+              </p>
+            )}
           </form>
         </FadeIn>
       </div>
